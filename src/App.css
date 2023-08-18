@@ -1,0 +1,117 @@
+/* Type Scale System
+90px, 63px, 45px, 31px, 22px, 16px, 11px, 8px, 5.6px, 4px, 2.px */
+
+/* Spacing System 
+160px, 96px, 80px, 64px, 48px, 40px, 32px, 24px, 16px, 8px, 4px, 2px
+*/
+
+/* Root font size, Default - 16px,
+Converted to 10px for easy calculations, 
+10 / 16 * 100 = 62.5% = 10px */
+:root {
+  font-size: 62.5%;
+}
+
+/* Type scale */
+:root {
+  --fs-01: 5.65rem;
+  --fs-02: 3.9rem;
+  --fs-03: 2.8rem;
+  --fs-04: 1.9rem;
+  --fs-05: 1.41rem;
+  --fs-06: 1rem;
+  --fs-07: 0.7rem;
+  --fs-08: 0.5rem;
+  --fs-09: 0.35rem;
+  --fs-10: 0.25rem;
+}
+
+/* Spacing system */
+:root {
+  --spacing-01: 16rem;
+  --spacing-02: 9.6rem;
+  --spacing-03: 8rem;
+  --spacing-04: 6.4rem;
+  --spacing-05: 4.8rem;
+  --spacing-06: 4rem;
+  --spacing-07: 3.2rem;
+  --spacing-08: 2.4rem;
+  --spacing-09: 1.6rem;
+  --spacing-10: 0.8rem;
+  --spacing-11: 0.4rem;
+  --spacing-12: 0.2rem;
+}
+
+/* Color palette */
+:root {
+  --primary-main: #2343F2;
+  --primary-dark: #1c36c2;
+  --primary-light: #3956f3;
+  --secondary-main: #7f8fa8;
+  --secondary-dark: #728197;
+  --secondary-light: #8c9ab1;
+  --danger-main: #f20000;
+  --danger-dark: #da0000;
+  --danger-light: #f76666;
+  --gray-01: #36383b;
+  --gray-02: #5b5e62;
+  --gray-03: #91969d;
+  --gray-04: #d3d9fc;
+  --gray-05: #e9ecfe;
+  --text-light: #fff;
+  --text-01: #111111;
+  --text-02: #292929;
+  --text-03: #414141;
+  --text-04: #585858;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+#root {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.App {
+  padding: var(--spacing-08) var(--spacing-10);
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:focus,
+a:focus {
+  box-shadow: 0 0 0 var(--spacing-11) rgba(0 0 0 / 0.2);
+}
+
+button:active,
+a:active {
+  transform: scale(0.9);
+}
+ 
+input[type="text"] {
+  outline: none;
+  border: 2px solid #bdc7fb;
+  border-radius: var(--spacing-11);
+  transition: all 0.2s;
+}
+
+input[type="text"]:hover {
+  border-color: #7b8ef7;
+}
+input[type="text"]:focus {
+  border: 2px solid var(--primary-dark);
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px, rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px, rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}

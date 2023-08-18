@@ -1,0 +1,78 @@
+.table-user-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.main-users-table {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.user-table-row-selected {
+  background-color: grey;
+}
+
+.user-table-row-item {
+  font-size: 20px;
+  white-space: nowrap;
+  padding: 2px;
+}
+
+
+.user-table-row-header .user-table-row-item {
+  text-align: left;
+
+}
+
+.users-table-row-item-action-container {
+  display: flex;
+  gap: 5px;
+}
+
+.user-table-row-action-btn {
+  display: flex;
+  gap:4px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 6px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.user-table-row-action-btn span {
+  font-size: var(--spacing-08);
+  transition: none;
+}
+
+.user-table-row-action-btn-edit {
+  color: rgb(119, 119, 185);
+  
+}
+
+.user-table-row-action-btn-delete {
+  border: 1px solid transparent;
+  color: grey;
+}
+
+/* States */
+.users-table__row:not(.user-table-row-selected):hover {
+  background-color: rgb(135, 143, 146);
+}
+
+.users-table__row.users-table__row--header:hover {
+  background-color: transparent;
+}
+
+.user-table-row-action-btn-edit:hover {
+  background-color: rgb(77, 112, 97);
+  color:white;
+  
+}
+
+.user-table-row-action-btn-delete:hover {
+  border-color: red;
+  color: red;
+}

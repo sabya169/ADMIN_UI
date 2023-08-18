@@ -1,0 +1,9 @@
+.error-msg-container {
+  width: 100%;
+}
+
+.error-message {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}

@@ -1,0 +1,48 @@
+.Main_dashboard {
+  width: 100%;
+}
+
+
+
+.not_found_message {
+  font-size: 5rem;
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+.delete_all_selected_btn_users {
+  padding: var(--spacing-10) var(--spacing-09);
+  background-color: var(--danger-main);
+  color: var(--text-light);  
+  border-radius: var(--spacing-11);
+  font-size: var(--fs-05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-11);
+}
+
+.delete_all_selected_btn_users:disabled,
+.delete_all_selected_btn_users:disabled:hover,
+.delete_all_selected_btn_users:disabled:focus,
+.delete_all_selected_btn_users:disabled:active  {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+}
+
+.delete_all_selected_btn_users > span {
+  font-size: 1.5rem;
+}
+
+.delete_all_selected_btn_users:hover,
+.delete_all_selected_btn_users:focus,
+.delete_all_selected_btn_users:active {
+  background-color: red;
+}
+

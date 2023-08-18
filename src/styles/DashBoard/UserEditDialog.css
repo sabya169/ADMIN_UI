@@ -1,0 +1,100 @@
+.dialog-box-container {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgb(224, 224, 224);
+  padding: 5px;
+  border-radius: 8px;
+  transition: all 1.1s;
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialog-header-heading {
+  font-size: var(--fs-03);
+}
+
+.dialog-header-btn {
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-content {
+  display: flex;
+  
+  gap: 10px;
+  flex-direction: column;
+}
+
+.dialog-content-item {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.dialog-content-item label {
+  font-size: var(--fs-05);
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: var(--spacing-11);
+}
+
+.dialog-content-item input {
+  font-size: var(--fs-04);
+  padding: var(--spacing-10);
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-10);
+}
+
+.dialog-actions-btn {
+  font-size: var(--fs-04);
+  padding: var(--spacing-10) var(--spacing-09);
+  border-radius: var(--spacing-11);
+  cursor: pointer;
+}
+
+.dialog-actions-btn-save {
+  background-color: var(--primary-main);
+  color: var(--text-light);
+}
+
+.dialog-actions-btn-save:hover,
+.dialog-actions-btn-save:active,
+.dialog-actions-btn-save:focus
+ {
+  background-color: blue;
+}
+
+.dialog-actions-btn-cancel:hover,
+.dialog-actions-btn-cancel:active,
+.dialog-actions-btn-cancel:focus
+ {
+  background-color: whitesmoke;
+}
+
+.dialog-header-btn:hover,
+.dialog-header-btn:active,
+.dialog-header-btn:focus {
+  background-color: var(--gray-04);
+}
+

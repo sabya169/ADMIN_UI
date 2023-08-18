@@ -1,0 +1,9 @@
+.header {
+  margin-bottom: var(--spacing-08);
+}
+
+.header-title {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(19, 18, 18);
+}
